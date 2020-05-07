@@ -1,27 +1,38 @@
-*   {box-sizing: border-box;}
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
 
 body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1.2rem;  
+    background-color: #101010;
 }
 h1 {
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-size: 70px;
 }
 h2 {
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-size: 20px;
 }
 h3 {
-    color: black;
+    color: #ffffff;
     font-size: 45px;
 }
+hr {
+    width: 97.5%;
+    background-color: #ffffff;
+    transform: translate(1.2%);
+}
 p {
-    color: black;
+    color: #ffffff;
 }
 p.a {
     color: gray; 
@@ -36,7 +47,7 @@ p.b {
     transform: translate(3.7%,100%)   
 }
 a {
-    color: black;
+    color: #ffffff;
 }
 a.a {
     color: gray;
@@ -56,23 +67,23 @@ img {
     text-align: center;
 }
 .disclamer {
-    background-color: white;
+    background-color: #1f1f1f;
     position: relative;
     text-align: center;
     font-size: 1.2rem;
     padding: 4vh 0vh 2vh;
 }
 .principale {
-    background-color: whitesmoke;
+    background-color: #101010;
     position: relative;
     font-size: 1rem;
     padding: 2vh 0vh 10vh 0vh;  
 }
 .fine {
-    background-color: white;
+    background-color: #101010;
     position: relative;
     font-size: 1rem;
-    padding: 0vh 0vh 5vh;  
+    padding: 0vh 0vh 8vh;  
 }
 .search-btn:hover> .search {
     width: 100%;
@@ -103,7 +114,7 @@ img {
 }
 #navbar {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #1d1d1d;
     padding: 90px 10px;
     transition: 0.4s;
     position: fixed;
@@ -111,15 +122,52 @@ img {
     top: 0;
     z-index: 99;
 }
+.onoffswitch-checkbox {
+    display: none; 
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999;  transition: border 0.9s; padding:0; border-radius: 30px; position: inherit; transform: translate(0%,20%)
+}
+.onoffswitch-label:hover {
+    border: 2px solid #9e0100; transition: border 0.9s 
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.6s ease-in 0.1s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 31px; padding: 0px; line-height: 31px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:after {
+    content: "Dark";
+    padding-left: 0;
+    background-color: #000000; color: #FFFFFF;
+}
+.onoffswitch-inner:before {
+    content: "White";
+    padding-right 0;
+    background-color: #FFFFFF; color: #000000;
+    text-align: center;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
 #navbar a {
     float: left;
-    color: black;
+    color: #ffffff;
     text-align: center;
     padding: 13px;
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
     border-radius: 9px;
+    transition: 0.5s;
 }
 #navbar #logo {
     font-size: 35px;
@@ -129,10 +177,10 @@ img {
 #navbar a:hover {
     background-color: #ddd;
     color: black;
-    transition: 0.5s
+    transition: 0.5s;
 }
 #navbar a.active {
-    background-color: orangered;
+    background-color: #9e0100;
     color: white;
 }
 #navbar-right {
