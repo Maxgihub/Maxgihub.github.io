@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+    <html> 
+        <head></head> 
+        <body> 
+            <div id= "box " style= "width: 800px;height:  800px;float:right; border: 1px solid red;"></div>            </div> 
+            <p>Copirait @ 2020 Vlad e Zhu Inc.</p> 
+        </body> 
+        <script> 
+        var box = document.querySelector("#box");
+        box.ondragover = function(e) {
+		ev = window.event || e
+		ev.preventDefault()
+	}
+	//使用ondrop事件源对象拖动着在目标对象上方释放/松手是触发
+	box.ondrop = function(e) {
+	ev = window.event || e
+	//这里也要阻止默认事件因为图片拖拽到浏览器默认会打开个新窗口显示图片
+	ev.preventDefault()
+	//读取拖拽的图片
+	let fr = new FileReader()
+	//用dataTransfer获取拖拽的图片
+	fr.readAsDataURL(ev.dataTransfer.files[0])
+	//添加事件
+	fr.load = function() {
+		let img = document.createElement("img")
+		//添加图片路径
+		img.src = this.result
+		box.appendChild(img)
+		}
+	}
+    
+        </script> 
+    </html>
