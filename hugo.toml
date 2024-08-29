@@ -1,6 +1,6 @@
 baseurl = "https://www.example.com/"
 languageCode = "en-us"
-title = "LiuMeccanica"
+title = "MECCANICA LIU"
 theme = "blackburn"
 author = "Yoshiharu Yamashita"
 copyright = "&copy; 2016. All rights reserved."
@@ -13,7 +13,7 @@ paginate = 10
 
 [params]
   # Shown in the home page
-  brand = "LiuMeccanica"
+  brand = "MECCANICA LIU"
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
