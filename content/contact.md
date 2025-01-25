@@ -7,22 +7,16 @@ description = "How to contact us"
 
 Siamo a vostra disposizione per qualsiasi informazione o richiesta. Non esitate a contattarci attraverso uno dei seguenti metodi:
 
-----------
-
-**Indirizzo**  
+**Nome Azienda**  
 Via Tito Livio,n° 3/A
 35010 , Ranzato, PD
 
-**Telefono:** 
-- 3319462972
-- 3489490399
-
-**Fax/Tel:** 0498873257  
+**Telefono:** 3319462972
+**Fax:** 0498873257  
 **Email:** meccanicaliu@gmail.com
 
 **Orari di Apertura:**  
-Lunedì - Venerdì: 8:00 - 18:00  
+Lunedì - Venerdì: 8:00 - 12:00 , 13:30 - 17:30 
 
-----------
 
 Siamo qui per aiutarvi! Non esitate a contattarci per richieste di preventivo, informazioni sui nostri servizi o qualsiasi altra necessità.
