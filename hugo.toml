@@ -2,8 +2,6 @@ baseurl = "https://www.example.com/"
 languageCode = "en-us"
 title = "MECCANICA LIU"
 theme = "blackburn"
-author = "Yoshiharu Yamashita"
-copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
 paginate = 10
 
@@ -28,12 +26,6 @@ paginate = 10
     weight = 1
     identifier = "home"
     url = "/"
-  [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
