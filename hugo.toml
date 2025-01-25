@@ -1,6 +1,6 @@
 baseurl = "https://www.example.com/"
 languageCode = "en-us"
-title = "MECCANICA LIU"
+title = "MECCANICALIU"
 theme = "blackburn"
 canonifyurls = true
 paginate = 10
